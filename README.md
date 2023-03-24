@@ -5,7 +5,7 @@ Yarn Berry plugin for easy Git Hooks.
 ## Installation
 
 ```sh
-$ yarn plugin import https://raw.githubusercontent.com/trufflehq/yarn-plugin-git-hooks/main/bundles/%40yarnpkg/plugin-git-hooks.js
+yarn plugin import https://raw.githubusercontent.com/trufflehq/yarn-plugin-git-hooks/main/bundles/%40yarnpkg/plugin-git-hooks.js
 ```
 
 ## Usage

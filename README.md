@@ -27,5 +27,5 @@ gitHooksPath: .github/hooks
 
 Now, every time you run `yarn` (once packages are installed), your hooks will be configured.
 
-> **Info**:  
+> **Note**:  
 > You can check the configuration succeeded with `git config --get core.hookspath`.

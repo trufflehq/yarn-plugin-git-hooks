@@ -1,6 +1,7 @@
 {
   "name": "yarn-plugin-git-hooks",
   "main": "./src/index.ts",
+  "version": "0.2.0",
   "license": "MIT",
   "author": "Carter Himmel <carter@truffle.vip>",
   "scripts": {

@@ -32,7 +32,7 @@ Now, every time you run `yarn` (once packages are installed), your hooks will be
 
 ## Docker
 
-> **Critical**:
+> **Critical**:  
 > This plugin is not compatible with Docker.
 > To disable, set `YARN_NO_INSTALL_GITHOOKS=1`
 >

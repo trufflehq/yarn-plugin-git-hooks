@@ -29,3 +29,13 @@ Now, every time you run `yarn` (once packages are installed), your hooks will be
 
 > **Note**:  
 > You can check the configuration succeeded with `git config --get core.hookspath`.
+
+## Docker
+
+> **Critical**:
+> This plugin is not compatible with Docker.
+> To disable, set `YARN_NO_INSTALL_GITHOOKS=1`
+>
+> ```dockerfile
+> ENV YARN_NO_INSTALL_GITHOOKS=1
+> ```

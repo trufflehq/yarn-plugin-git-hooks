@@ -22,7 +22,7 @@ const plugin: Plugin = {
       const path = project.configuration.get('gitHooksPath');
       const isDlx = Boolean(project.cwd?.endsWith(`dlx-${process.pid}`));
 
-      if (path && !ci.isCI && !isDlx) {
+      if (path && !ci.isCI && !isDlx && !process.env.YARN_NO_INSTALL_GITHOOKS) {
         return execUtils.pipevp('git', ['config', 'core.hooksPath', path], {
           cwd: project.cwd,
           strict: true,

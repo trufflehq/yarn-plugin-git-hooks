@@ -4,7 +4,7 @@ Yarn Berry plugin for easy Git Hooks.
 
 ## Installation
 
-```sh
+```console
 yarn plugin import https://raw.githubusercontent.com/trufflehq/yarn-plugin-git-hooks/main/bundles/%40yarnpkg/plugin-git-hooks.js
 ```
 
@@ -12,7 +12,7 @@ yarn plugin import https://raw.githubusercontent.com/trufflehq/yarn-plugin-git-h
 
 1. Create your Git Hooks. We recommend `.github/hooks`.
 
-> **Warning**:  
+> [!WARNING]  
 > Make sure they are are executable (`chmod +x ./commit-msg`)!
 >
 > ```ansi
@@ -21,18 +21,16 @@ yarn plugin import https://raw.githubusercontent.com/trufflehq/yarn-plugin-git-h
 
 2. Specify the path to your Git Hooks directory in `.yarnrc.yml`:
 
-```yaml
+```yml
 gitHooksPath: .github/hooks
 ```
 
 Now, every time you run `yarn` (once packages are installed), your hooks will be configured.
 
-> **Note**:  
+> [!NOTE]  
 > You can check the configuration succeeded with `git config --get core.hookspath`.
 
-## Docker
-
-> **Important**:  
+> [!WARNING]  
 > This plugin is not compatible with Docker.  
 > To disable, set `YARN_NO_INSTALL_GITHOOKS=1`.  
 >

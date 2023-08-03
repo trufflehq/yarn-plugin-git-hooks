@@ -1,28 +1,28 @@
 {
   "name": "yarn-plugin-git-hooks",
   "main": "./src/index.ts",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "author": "Carter Himmel <carter@truffle.vip>",
   "scripts": {
     "lint": "prettier --check . && eslint src --ext ts --format=pretty",
     "format": "prettier --write . && eslint src --ext ts --fix --format=pretty",
-    "build": "builder build plugin && yarn plugin import ./bundles/@yarnpkg/plugin-git-hooks.js"
+    "build": "builder build plugin"
   },
   "dependencies": {
     "ci-info": "^3.8.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.5.0",
-    "@commitlint/config-angular": "^17.4.4",
-    "@yarnpkg/builder": "^4.0.0-rc.40",
-    "@yarnpkg/core": "^3.5.0",
-    "@yarnpkg/fslib": "^2.10.2",
-    "eslint": "^8.36.0",
-    "eslint-config-neon": "^0.1.41",
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-angular": "^17.6.7",
+    "@yarnpkg/builder": "^4.0.0-rc.48",
+    "@yarnpkg/core": "^4.0.0-rc.48",
+    "@yarnpkg/fslib": "^3.0.0-rc.48",
+    "eslint": "^8.46.0",
+    "eslint-config-neon": "^0.1.47",
     "eslint-formatter-pretty": "^5.0.0",
-    "prettier": "^2.8.7",
-    "typescript": "^5.0.2"
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.6"
   },
   "eslintConfig": {
     "extends": [
@@ -44,7 +44,8 @@
       "@typescript-eslint/restrict-template-expressions": 0,
       "@typescript-eslint/no-base-to-string": 0,
       "@typescript-eslint/space-before-function-paren": 0,
-      "tsdoc/syntax": 0
+      "tsdoc/syntax": 0,
+      "unicorn/prefer-node-protocol": 0
     },
     "ignorePatterns": [
       "bundles",
@@ -87,5 +88,5 @@
       ]
     }
   },
-  "packageManager": "yarn@3.5.0"
+  "packageManager": "yarn@3.6.1"
 }

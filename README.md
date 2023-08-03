@@ -32,8 +32,14 @@ Now, every time you run `yarn` (once packages are installed), your hooks will be
 
 > [!WARNING]  
 > This plugin is not compatible with Docker.  
-> To disable, set `YARN_NO_INSTALL_GITHOOKS=1`.  
+> To disable, set `YARN_DISABLE_GIT_HOOKS=1`.
 >
 > ```dockerfile
-> ENV YARN_NO_INSTALL_GITHOOKS=1
+> ENV YARN_DISABLE_GIT_HOOKS=1
+> ```
+>
+> or
+>
+> ```console
+>
 > ```
